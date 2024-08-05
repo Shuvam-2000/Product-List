@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:hover h2{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-section{
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw;
+        font-size: 0.8em;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }    
+}

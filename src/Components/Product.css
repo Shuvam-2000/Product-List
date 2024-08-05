@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+}
+
+/* filter-button */
+.button-filter{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Cart section styling */
+.cart {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items to the next line if there's not enough space */
+    gap: 20px; /*Space between the product items*/
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px;  /* to maintain a gap between the filter button and cart section*/
+}
+
+/* Product styling */
+.product {
+    border: 1px solid #ddd; /* Light border around each product */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better appearance */
+    padding: 10px;
+    text-align: center; /* Center text within the product */
+    width: 250px; /* Fixed width for each product card */
+    background-color: #fff; /* White background for product cards */
+}
+  
+.product-image img {
+    width: 50%; /* Ensure image takes full width of the container */
+    height: 50%; /* image height */
+    border-bottom: 1px solid #ddd; /* Divider between image and text */
+    border-radius: 8px;
+}
+  
+.product-details {
+    margin-top: 10px; /* Space between image and details */
+    padding: 10px;
+}
+  
+.product-title {
+    font-size: 16px; /* Adjust as needed */
+    font-weight: bold; /* Bold title */
+}
+  
+.product-price {
+    font-size: 14px; /* Adjust as needed */
+    color: #333; /* Darker color for price */
+}
+  
+.product-rating {
+    font-size: 14px; /* Adjust as needed */
+    color: #333; /* Darker color for price */
+}
+  
+/* Add to cart */
+button {
+    background-color: black; /* Black background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 20px; /* Padding around text */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space between price and button */
+    margin-bottom: 2px;
+}
+
+/* making the filter buttons responsive */
+@media screen and (max-width: 800px) {
+    /* Adjust the filter button container for smaller screens */
+    .button-filter {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+        gap: 10px; /* Space between buttons */
+    }
+
+    /* Adjust individual filter buttons if needed */
+    .button-filter button {
+        width: 100%; /* Full width for each button */
+        font-size: 0.5em;
+    }
+}
