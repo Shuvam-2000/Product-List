@@ -27,6 +27,7 @@ const Product = () => {
                 setProductItem(showItem)
       }
 
+  // filter product by rating
   const filterRating = () => {
     const filterItem = productItem.filter((item) => {
                             return(
