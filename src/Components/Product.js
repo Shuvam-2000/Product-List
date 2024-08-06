@@ -23,8 +23,8 @@ const Product = () => {
                               return(
                                 item.price >= 100
                               )              
-                })
-                setProductItem(showItem)
+              })
+              setProductItem(showItem)
       }
 
   // filter product by rating
@@ -33,8 +33,8 @@ const Product = () => {
                             return(
                               item.rating >= 4
                             )
-    })
-    setProductItem(filterItem)
+              })
+              setProductItem(filterItem)
   }
 
   // show all products
